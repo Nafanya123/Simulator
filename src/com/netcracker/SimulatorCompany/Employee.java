@@ -26,6 +26,9 @@ public class Employee {
         this.position = position;
         this.date = date;
     }
+    /*
+    /Функция расчетного листа за n-ое кол-во  месяцев 
+    */
     public void rept()
     {
         DateFormat ft = new SimpleDateFormat ("dd.MM.yyyy");
@@ -54,11 +57,6 @@ public class Employee {
         {
             System.out.printf("Нераспаршена с помощью " + ft);
         }
-    }
-
-    public void printSalaryReport()
-    {
-        System.out.println("Имя: " + getName() +", Должность: " + getPosition() + ". Оклад: " + getSalary() + " рублей.");
     }
 
     public String getName() {
